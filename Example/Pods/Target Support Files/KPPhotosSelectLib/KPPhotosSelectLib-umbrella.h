@@ -10,6 +10,10 @@
 #endif
 #endif
 
+#import "KPImageSelectedView.h"
+#import "KPPhotoModel.h"
+#import "KPPhotoSubViewCell.h"
+#import "KPSelectViewCollectionView.h"
 
 FOUNDATION_EXPORT double KPPhotosSelectLibVersionNumber;
 FOUNDATION_EXPORT const unsigned char KPPhotosSelectLibVersionString[];

@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1E2450CB74472C7C3F1AFC6AE0D56C /* KPSelectViewCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AF19B593B6011E24403CDBA5C6589 /* KPSelectViewCollectionView.m */; };
 		15142F1BF65B166BAB0E27534805A809 /* Pods-KPPhotosSelectLib_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA5883C94B08E59CEE4B763A29A8243 /* Pods-KPPhotosSelectLib_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A9C9A144B2E42E9FB73AA89AAABF711 /* KPPhotosSelectLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B19D288328E26C52D197F7DC4602A12 /* KPPhotosSelectLib-dummy.m */; };
+		2A9174D5CD0DEDBC8088A6F1880D357B /* KPImageSelectedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7882359B788242CC1632520A8ED4FA0B /* KPImageSelectedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3063B76F5E8810F95BFEE453995279D9 /* KPSelectViewCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D5B57803CAAC44B01F2C69316BB6126 /* KPSelectViewCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32AD151E0AD23DBE2AB547CAF751AF53 /* Pods-KPPhotosSelectLib_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E52C1486E5DCE603A20D68BF8F99FB /* Pods-KPPhotosSelectLib_Example-dummy.m */; };
-		3379043D2C24B1E92C545F81A9CDF9DD /* KPPhotosSelectLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC66E0D35641E7CD058D63D5F454C298 /* KPPhotosSelectLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CFB3D17B0DAAADE923B6E7C3477E1D2 /* KPPhotosSelectLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC91A786F9CC4D017774274423B60D02 /* KPPhotosSelectLib-dummy.m */; };
+		3DD367BAF51D57672334590E0450FBC4 /* KPPhotosSelectLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E3857C5A659FDC93B5D42A5D3176C0 /* KPPhotosSelectLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43D4D36F19F9048731F2E4BB112C2038 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		6280D212570B0561832ACDC3AAEB160D /* Pods-KPPhotosSelectLib_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AEDFB97DB92358AFE4DBAB7D38E945 /* Pods-KPPhotosSelectLib_Tests-dummy.m */; };
+		7078CE929A849D903F6F06C0AB3DE4B7 /* 1.png in Sources */ = {isa = PBXBuildFile; fileRef = 29C5532BEDFB92A6F51293143D9A5570 /* 1.png */; };
 		80B93B32F022B3E46A0EFAB854B2190C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C6E6AD06623DADDAB297047A223E93D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		883E286CCB79B1607A8BBA2D2412ED2A /* KPPhotoSubViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = FC6C1D750F04688BA38FAA7F6C85D2CA /* KPPhotoSubViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB615694A18FC184AB3750753D945DA7 /* KPImageSelectedView.m in Sources */ = {isa = PBXBuildFile; fileRef = D39BEE3FCB0AD34E1EF38FB8D424A9F3 /* KPImageSelectedView.m */; };
+		BD6D4527A2833EDDDDDF6583AB53B4D2 /* KPPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B314F14CB3A5D72A8964D11BB76776E4 /* KPPhotoModel.m */; };
+		BEEDB4EAE9676A23C3EC34A76547810B /* KPPhotoSubViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C275F94155EBE625A7154455C758B478 /* KPPhotoSubViewCell.m */; };
 		C905E087BCEC75A695C3495E0E83CE10 /* Pods-KPPhotosSelectLib_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAFD5A97A3F881BFF04F49BF5E35B5C9 /* Pods-KPPhotosSelectLib_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF9C75C000E3CF8EE641C43530EFD9D3 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B468F646718BEBC6666C4D7CE6C480D /* ReplaceMe.m */; };
+		EFBBDFF97ED7350073B63E330F4ABD6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		FAB17DC6891BCB9E6523D4F6079A5135 /* KPPhotoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 30803EE892BED1D2BB9C0FBFE8DF919D /* KPPhotoModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,20 +32,18 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9E0EF4E9DAB9E7ADAC4E7C776BA93095;
+			remoteGlobalIDString = 44939D7E38BA2BEA712E6D9FF6DBA9CC;
 			remoteInfo = KPPhotosSelectLib;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		014A5A530ED76BFE5E9BFBC593068A6D /* KPPhotosSelectLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KPPhotosSelectLib-prefix.pch"; sourceTree = "<group>"; };
-		030B63D9879C12E21CA49D3B35297ADA /* KPPhotosSelectLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KPPhotosSelectLib.xcconfig; sourceTree = "<group>"; };
 		1314080946484C47A8D77171657249A6 /* Pods-KPPhotosSelectLib_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KPPhotosSelectLib_Tests.modulemap"; sourceTree = "<group>"; };
-		1CE9B9B610EC7E01816D27FA33E331F9 /* KPPhotosSelectLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KPPhotosSelectLib.modulemap; sourceTree = "<group>"; };
 		269A9F7B7AD6F5DAB15760FAC26A9955 /* Pods-KPPhotosSelectLib_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KPPhotosSelectLib_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2B19D288328E26C52D197F7DC4602A12 /* KPPhotosSelectLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KPPhotosSelectLib-dummy.m"; sourceTree = "<group>"; };
+		29C5532BEDFB92A6F51293143D9A5570 /* 1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = 1.png; path = KPPhotosSelectLib/Classes/KPImageSelectView/1.png; sourceTree = "<group>"; };
+		2D5B57803CAAC44B01F2C69316BB6126 /* KPSelectViewCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KPSelectViewCollectionView.h; path = KPPhotosSelectLib/Classes/KPImageSelectView/KPSelectViewCollectionView.h; sourceTree = "<group>"; };
+		30803EE892BED1D2BB9C0FBFE8DF919D /* KPPhotoModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KPPhotoModel.h; path = KPPhotosSelectLib/Classes/KPImageSelectView/KPPhotoModel.h; sourceTree = "<group>"; };
 		3AA5883C94B08E59CEE4B763A29A8243 /* Pods-KPPhotosSelectLib_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KPPhotosSelectLib_Example-umbrella.h"; sourceTree = "<group>"; };
-		3B468F646718BEBC6666C4D7CE6C480D /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = KPPhotosSelectLib/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		41F743E348572B92DC543677DB601048 /* Pods-KPPhotosSelectLib_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KPPhotosSelectLib_Tests-resources.sh"; sourceTree = "<group>"; };
 		47DBC32A0EFBA8B66C50A481C8AF39F1 /* Pods_KPPhotosSelectLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KPPhotosSelectLib_Example.framework; path = "Pods-KPPhotosSelectLib_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A3E8F7B985722257C0FE02CAC107A6 /* Pods-KPPhotosSelectLib_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KPPhotosSelectLib_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -48,23 +54,41 @@
 		6429D6EA5656DCE7185380CCA5141E08 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6BD1B8346A0E47D9AC81A33FDD1CC961 /* Pods-KPPhotosSelectLib_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KPPhotosSelectLib_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6F5AF19B593B6011E24403CDBA5C6589 /* KPSelectViewCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KPSelectViewCollectionView.m; path = KPPhotosSelectLib/Classes/KPImageSelectView/KPSelectViewCollectionView.m; sourceTree = "<group>"; };
 		7736836DBBA6390D3830D750F366B8C1 /* KPPhotosSelectLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KPPhotosSelectLib.framework; path = KPPhotosSelectLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7882359B788242CC1632520A8ED4FA0B /* KPImageSelectedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KPImageSelectedView.h; path = KPPhotosSelectLib/Classes/KPImageSelectView/KPImageSelectedView.h; sourceTree = "<group>"; };
 		841B6E61443D0D358AE2B87B8CAF0D1A /* Pods-KPPhotosSelectLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KPPhotosSelectLib_Example.release.xcconfig"; sourceTree = "<group>"; };
+		84D3C2EE9B7F91DEFD9280E80A3F65EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86E52C1486E5DCE603A20D68BF8F99FB /* Pods-KPPhotosSelectLib_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KPPhotosSelectLib_Example-dummy.m"; sourceTree = "<group>"; };
-		90D9C6FD6EFCE090215BB4B119014567 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		876E53D63EBAD3ECEAD55BE1BED15C5F /* KPPhotosSelectLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KPPhotosSelectLib.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B314F14CB3A5D72A8964D11BB76776E4 /* KPPhotoModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KPPhotoModel.m; path = KPPhotosSelectLib/Classes/KPImageSelectView/KPPhotoModel.m; sourceTree = "<group>"; };
+		C275F94155EBE625A7154455C758B478 /* KPPhotoSubViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KPPhotoSubViewCell.m; path = KPPhotosSelectLib/Classes/KPImageSelectView/KPPhotoSubViewCell.m; sourceTree = "<group>"; };
 		CFE12EF6A93A9520678EC42E248F4C45 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D21A866E2BF6E8975FA9A43D1E2B9920 /* KPPhotosSelectLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KPPhotosSelectLib.xcconfig; sourceTree = "<group>"; };
+		D39BEE3FCB0AD34E1EF38FB8D424A9F3 /* KPImageSelectedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KPImageSelectedView.m; path = KPPhotosSelectLib/Classes/KPImageSelectView/KPImageSelectedView.m; sourceTree = "<group>"; };
 		DA423C5AF097F20E3686AEBA78DECBDC /* Pods-KPPhotosSelectLib_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KPPhotosSelectLib_Example.modulemap"; sourceTree = "<group>"; };
+		DC91A786F9CC4D017774274423B60D02 /* KPPhotosSelectLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KPPhotosSelectLib-dummy.m"; sourceTree = "<group>"; };
 		EAFD5A97A3F881BFF04F49BF5E35B5C9 /* Pods-KPPhotosSelectLib_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KPPhotosSelectLib_Tests-umbrella.h"; sourceTree = "<group>"; };
-		EC66E0D35641E7CD058D63D5F454C298 /* KPPhotosSelectLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KPPhotosSelectLib-umbrella.h"; sourceTree = "<group>"; };
 		F0A365832A41279EE0EA3ABDAC2C4442 /* Pods-KPPhotosSelectLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KPPhotosSelectLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F0BCAC8EB2D077DA723467997E2D461A /* KPPhotosSelectLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KPPhotosSelectLib-prefix.pch"; sourceTree = "<group>"; };
 		F26248179FDB89B25D0382511A80F599 /* Pods-KPPhotosSelectLib_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KPPhotosSelectLib_Example-resources.sh"; sourceTree = "<group>"; };
+		F5E3857C5A659FDC93B5D42A5D3176C0 /* KPPhotosSelectLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KPPhotosSelectLib-umbrella.h"; sourceTree = "<group>"; };
 		F8AEDFB97DB92358AFE4DBAB7D38E945 /* Pods-KPPhotosSelectLib_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KPPhotosSelectLib_Tests-dummy.m"; sourceTree = "<group>"; };
 		F8B2B52045B2120F3E8FF0E154652FE7 /* Pods_KPPhotosSelectLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KPPhotosSelectLib_Tests.framework; path = "Pods-KPPhotosSelectLib_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC6C1D750F04688BA38FAA7F6C85D2CA /* KPPhotoSubViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KPPhotoSubViewCell.h; path = KPPhotosSelectLib/Classes/KPImageSelectView/KPPhotoSubViewCell.h; sourceTree = "<group>"; };
 		FCE616EA84C4B09A00C409723F547687 /* Pods-KPPhotosSelectLib_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KPPhotosSelectLib_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		34A6BE6370F738DC94D1FDBBBE7C9370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFBBDFF97ED7350073B63E330F4ABD6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F02C4F58D0B053E273ED45E155D2F93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,14 +105,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E38452A85602028B465FC9847119B8CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C6E6AD06623DADDAB297047A223E93D2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,6 +115,24 @@
 				74C4827B404AA75764C96519761F193B /* Pods-KPPhotosSelectLib_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2EAEB52B13EDFC10A511B488CD673E14 /* KPPhotosSelectLib */ = {
+			isa = PBXGroup;
+			children = (
+				29C5532BEDFB92A6F51293143D9A5570 /* 1.png */,
+				7882359B788242CC1632520A8ED4FA0B /* KPImageSelectedView.h */,
+				D39BEE3FCB0AD34E1EF38FB8D424A9F3 /* KPImageSelectedView.m */,
+				30803EE892BED1D2BB9C0FBFE8DF919D /* KPPhotoModel.h */,
+				B314F14CB3A5D72A8964D11BB76776E4 /* KPPhotoModel.m */,
+				FC6C1D750F04688BA38FAA7F6C85D2CA /* KPPhotoSubViewCell.h */,
+				C275F94155EBE625A7154455C758B478 /* KPPhotoSubViewCell.m */,
+				2D5B57803CAAC44B01F2C69316BB6126 /* KPSelectViewCollectionView.h */,
+				6F5AF19B593B6011E24403CDBA5C6589 /* KPSelectViewCollectionView.m */,
+				E55A02C148EA6680DD2031A12867B628 /* Support Files */,
+			);
+			name = KPPhotosSelectLib;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		74C4827B404AA75764C96519761F193B /* Pods-KPPhotosSelectLib_Tests */ = {
@@ -123,11 +157,19 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				E9027B7B9819FAEF6BF70CF6FF243DD0 /* Development Pods */,
+				8B086FDE8C255346B9025ACB58137950 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				B63C767393288951C9055D0F3417A661 /* Products */,
 				09BD2CA961CE6D0DB4E769DCF07AEA8C /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8B086FDE8C255346B9025ACB58137950 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EAEB52B13EDFC10A511B488CD673E14 /* KPPhotosSelectLib */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		9800EB9A70725DD6CDE4C37AA5D05369 /* Pods-KPPhotosSelectLib_Example */ = {
@@ -166,30 +208,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BFE5757DDD4DEF2A868A9BF15779D8E6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				90D9C6FD6EFCE090215BB4B119014567 /* Info.plist */,
-				1CE9B9B610EC7E01816D27FA33E331F9 /* KPPhotosSelectLib.modulemap */,
-				030B63D9879C12E21CA49D3B35297ADA /* KPPhotosSelectLib.xcconfig */,
-				2B19D288328E26C52D197F7DC4602A12 /* KPPhotosSelectLib-dummy.m */,
-				014A5A530ED76BFE5E9BFBC593068A6D /* KPPhotosSelectLib-prefix.pch */,
-				EC66E0D35641E7CD058D63D5F454C298 /* KPPhotosSelectLib-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/KPPhotosSelectLib";
-			sourceTree = "<group>";
-		};
-		C4A50489310A204D4138203048D047A4 /* KPPhotosSelectLib */ = {
-			isa = PBXGroup;
-			children = (
-				3B468F646718BEBC6666C4D7CE6C480D /* ReplaceMe.m */,
-				BFE5757DDD4DEF2A868A9BF15779D8E6 /* Support Files */,
-			);
-			name = KPPhotosSelectLib;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,12 +216,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E9027B7B9819FAEF6BF70CF6FF243DD0 /* Development Pods */ = {
+		E55A02C148EA6680DD2031A12867B628 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C4A50489310A204D4138203048D047A4 /* KPPhotosSelectLib */,
+				84D3C2EE9B7F91DEFD9280E80A3F65EE /* Info.plist */,
+				876E53D63EBAD3ECEAD55BE1BED15C5F /* KPPhotosSelectLib.modulemap */,
+				D21A866E2BF6E8975FA9A43D1E2B9920 /* KPPhotosSelectLib.xcconfig */,
+				DC91A786F9CC4D017774274423B60D02 /* KPPhotosSelectLib-dummy.m */,
+				F0BCAC8EB2D077DA723467997E2D461A /* KPPhotosSelectLib-prefix.pch */,
+				F5E3857C5A659FDC93B5D42A5D3176C0 /* KPPhotosSelectLib-umbrella.h */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KPPhotosSelectLib";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,11 +241,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F068600EFE59CCE35B1B92A0282E95B /* Headers */ = {
+		36D9CBBB4097E23CFF936B9859C8EB37 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3379043D2C24B1E92C545F81A9CDF9DD /* KPPhotosSelectLib-umbrella.h in Headers */,
+				2A9174D5CD0DEDBC8088A6F1880D357B /* KPImageSelectedView.h in Headers */,
+				FAB17DC6891BCB9E6523D4F6079A5135 /* KPPhotoModel.h in Headers */,
+				3DD367BAF51D57672334590E0450FBC4 /* KPPhotosSelectLib-umbrella.h in Headers */,
+				883E286CCB79B1607A8BBA2D2412ED2A /* KPPhotoSubViewCell.h in Headers */,
+				3063B76F5E8810F95BFEE453995279D9 /* KPSelectViewCollectionView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +282,23 @@
 			productReference = 47DBC32A0EFBA8B66C50A481C8AF39F1 /* Pods_KPPhotosSelectLib_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		44939D7E38BA2BEA712E6D9FF6DBA9CC /* KPPhotosSelectLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89BBE0EB3E2BBBEE5C25D3F323E21B6E /* Build configuration list for PBXNativeTarget "KPPhotosSelectLib" */;
+			buildPhases = (
+				0782235A7B2D2D6D00B4A511CDB2C371 /* Sources */,
+				34A6BE6370F738DC94D1FDBBBE7C9370 /* Frameworks */,
+				36D9CBBB4097E23CFF936B9859C8EB37 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KPPhotosSelectLib;
+			productName = KPPhotosSelectLib;
+			productReference = 7736836DBBA6390D3830D750F366B8C1 /* KPPhotosSelectLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		6CB1B16C7A095890147ABB2480B4450D /* Pods-KPPhotosSelectLib_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F6061560B019F04DF7E32E0C369F4FC /* Build configuration list for PBXNativeTarget "Pods-KPPhotosSelectLib_Tests" */;
@@ -269,23 +314,6 @@
 			name = "Pods-KPPhotosSelectLib_Tests";
 			productName = "Pods-KPPhotosSelectLib_Tests";
 			productReference = F8B2B52045B2120F3E8FF0E154652FE7 /* Pods_KPPhotosSelectLib_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9E0EF4E9DAB9E7ADAC4E7C776BA93095 /* KPPhotosSelectLib */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DB5B31C5981CB34B8C9EF404443617FB /* Build configuration list for PBXNativeTarget "KPPhotosSelectLib" */;
-			buildPhases = (
-				1C6D7850C8BBCEA3032164595A01E0C9 /* Sources */,
-				E38452A85602028B465FC9847119B8CC /* Frameworks */,
-				6F068600EFE59CCE35B1B92A0282E95B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KPPhotosSelectLib;
-			productName = KPPhotosSelectLib;
-			productReference = 7736836DBBA6390D3830D750F366B8C1 /* KPPhotosSelectLib.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -309,7 +337,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9E0EF4E9DAB9E7ADAC4E7C776BA93095 /* KPPhotosSelectLib */,
+				44939D7E38BA2BEA712E6D9FF6DBA9CC /* KPPhotosSelectLib */,
 				43B5A4884C29B6C85E89D861BAF117C0 /* Pods-KPPhotosSelectLib_Example */,
 				6CB1B16C7A095890147ABB2480B4450D /* Pods-KPPhotosSelectLib_Tests */,
 			);
@@ -317,12 +345,16 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1C6D7850C8BBCEA3032164595A01E0C9 /* Sources */ = {
+		0782235A7B2D2D6D00B4A511CDB2C371 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A9C9A144B2E42E9FB73AA89AAABF711 /* KPPhotosSelectLib-dummy.m in Sources */,
-				DF9C75C000E3CF8EE641C43530EFD9D3 /* ReplaceMe.m in Sources */,
+				7078CE929A849D903F6F06C0AB3DE4B7 /* 1.png in Sources */,
+				AB615694A18FC184AB3750753D945DA7 /* KPImageSelectedView.m in Sources */,
+				BD6D4527A2833EDDDDDF6583AB53B4D2 /* KPPhotoModel.m in Sources */,
+				3CFB3D17B0DAAADE923B6E7C3477E1D2 /* KPPhotosSelectLib-dummy.m in Sources */,
+				BEEDB4EAE9676A23C3EC34A76547810B /* KPPhotoSubViewCell.m in Sources */,
+				0A1E2450CB74472C7C3F1AFC6AE0D56C /* KPSelectViewCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +380,7 @@
 		4A6FC35F271F06432E522234B0D7D7BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KPPhotosSelectLib;
-			target = 9E0EF4E9DAB9E7ADAC4E7C776BA93095 /* KPPhotosSelectLib */;
+			target = 44939D7E38BA2BEA712E6D9FF6DBA9CC /* KPPhotosSelectLib */;
 			targetProxy = C389031CA534E1ABB895729C8E08951B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -479,9 +511,9 @@
 			};
 			name = Release;
 		};
-		611507999B23FF312493C73BCD6B69DC /* Release */ = {
+		681D85A1CE5F445024AF7AD4E55262A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 030B63D9879C12E21CA49D3B35297ADA /* KPPhotosSelectLib.xcconfig */;
+			baseConfigurationReference = D21A866E2BF6E8975FA9A43D1E2B9920 /* KPPhotosSelectLib.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -503,11 +535,10 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -629,9 +660,9 @@
 			};
 			name = Release;
 		};
-		C0972B2164F7593CB7F4A49792FC0FCF /* Debug */ = {
+		CBF7AB6CA9DC5209D29DA1307E5A9442 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 030B63D9879C12E21CA49D3B35297ADA /* KPPhotosSelectLib.xcconfig */;
+			baseConfigurationReference = D21A866E2BF6E8975FA9A43D1E2B9920 /* KPPhotosSelectLib.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -653,10 +684,11 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -679,11 +711,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB5B31C5981CB34B8C9EF404443617FB /* Build configuration list for PBXNativeTarget "KPPhotosSelectLib" */ = {
+		89BBE0EB3E2BBBEE5C25D3F323E21B6E /* Build configuration list for PBXNativeTarget "KPPhotosSelectLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C0972B2164F7593CB7F4A49792FC0FCF /* Debug */,
-				611507999B23FF312493C73BCD6B69DC /* Release */,
+				681D85A1CE5F445024AF7AD4E55262A5 /* Debug */,
+				CBF7AB6CA9DC5209D29DA1307E5A9442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

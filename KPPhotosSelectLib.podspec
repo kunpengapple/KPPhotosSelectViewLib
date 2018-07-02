@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
 
   s.description      = 'KPPhotosSelectLib 是一个图片选择器'
 
-  s.homepage         = 'https://github.com/kunpengapple/KPPhotosSelectView'
+  s.homepage         = 'https://github.com/kunpengapple/KPPhotosSelectViewLib'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'kunpengapple@163.com' => 'kunpengapple@163.com' }
-  s.source           = { :git => 'https://github.com/kunpengapple/KPPhotosSelectView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/kunpengapple/KPPhotosSelectViewLib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

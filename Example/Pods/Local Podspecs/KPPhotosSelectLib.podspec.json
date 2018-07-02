@@ -1,9 +1,9 @@
 {
   "name": "KPPhotosSelectLib",
   "version": "0.1.0",
-  "summary": "A short description of KPPhotosSelectLib.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/kunpengapple@163.com/KPPhotosSelectLib",
+  "summary": "KPPhotosSelectLib.",
+  "description": "KPPhotosSelectLib 是一个图片选择器",
+  "homepage": "https://github.com/kunpengapple/KPPhotosSelectView",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "kunpengapple@163.com": "kunpengapple@163.com"
   },
   "source": {
-    "git": "https://github.com/kunpengapple@163.com/KPPhotosSelectLib.git",
+    "git": "https://github.com/kunpengapple/KPPhotosSelectView.git",
     "tag": "0.1.0"
   },
   "platforms": {
