@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'KPPhotosSelectLib'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of KPPhotosSelectLib.'
+  s.summary          = ' KPPhotosSelectLib.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,15 +17,13 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'KPPhotosSelectLib 是一个图片选择器'
 
-  s.homepage         = 'https://github.com/kunpengapple@163.com/KPPhotosSelectLib'
+  s.homepage         = 'https://github.com/kunpengapple/KPPhotosSelectView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'kunpengapple@163.com' => 'kunpengapple@163.com' }
-  s.source           = { :git => 'https://github.com/kunpengapple@163.com/KPPhotosSelectLib.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/kunpengapple/KPPhotosSelectView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

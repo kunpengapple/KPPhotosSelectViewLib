@@ -1,0 +1,6 @@
+framework module KPPhotosSelectLib {
+  umbrella header "KPPhotosSelectLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

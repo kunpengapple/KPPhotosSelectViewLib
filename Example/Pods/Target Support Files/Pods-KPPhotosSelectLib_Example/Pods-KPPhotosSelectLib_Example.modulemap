@@ -1,0 +1,6 @@
+framework module Pods_KPPhotosSelectLib_Example {
+  umbrella header "Pods-KPPhotosSelectLib_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

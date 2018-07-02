@@ -1,0 +1,16 @@
+PODS:
+  - KPPhotosSelectLib (0.1.0)
+
+DEPENDENCIES:
+  - KPPhotosSelectLib (from `../`)
+
+EXTERNAL SOURCES:
+  KPPhotosSelectLib:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KPPhotosSelectLib: 31a8b572ac727c902b3dc3c15671cb89b256be08
+
+PODFILE CHECKSUM: 4bdea88e6208721011d0d34a62983fa9991cbbb0
+
+COCOAPODS: 1.3.1
