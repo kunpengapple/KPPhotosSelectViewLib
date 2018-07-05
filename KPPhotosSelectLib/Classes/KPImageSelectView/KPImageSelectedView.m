@@ -11,11 +11,9 @@
 #import "KPPhotoSubViewCell.h"
 #import "KPPhotoModel.h"
 
-
 static NSString *HXPhotoSubViewCellId = @"photoSubViewCellId";
 @interface KPImageSelectedView ()<KPCollectionViewDataSource,KPCollectionViewDelegate,HXPhotoSubViewCellDelegate,KPCollectionViewDelegate>
 
-@property (strong, nonatomic) NSMutableArray *dataList;
 
 @property (strong, nonatomic) KPSelectViewCollectionView *collectionView;
 @property (strong, nonatomic) KPPhotoModel *addModel;
@@ -84,7 +82,7 @@ static NSString *HXPhotoSubViewCellId = @"photoSubViewCellId";
     for (UIImage *image in imageArray) {
         KPPhotoModel *imageModel = [[KPPhotoModel alloc] init];
         imageModel.image = image;
-        imageModel.type = 0;
+        imageModel.type = KPPhotoModelType_NormalImage;
         [self.dataList addObject:imageModel];
     }
     if (self.dataList.count >= 9) {
@@ -108,6 +106,7 @@ static NSString *HXPhotoSubViewCellId = @"photoSubViewCellId";
     KPPhotoSubViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HXPhotoSubViewCellId forIndexPath:indexPath];
     cell.delegate = self;
     cell.model = self.dataList[indexPath.item];
+    cell.model.photosFrame = cell.frame;
     cell.backgroundColor = [UIColor blueColor];
 
     return cell;
@@ -118,11 +117,20 @@ static NSString *HXPhotoSubViewCellId = @"photoSubViewCellId";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (self.tempShowAddCell) {
         if (indexPath.item == self.dataList.count) {
-//            [self goPhotoViewController];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(addBtnClick)]) {
+                [self.delegate addBtnClick];
+            }
             return;
+        }else{
+            if (self.delegate && [self.delegate respondsToSelector:@selector(photoView:imageClickIndex:)]) {
+                [self.delegate photoView:self imageClickIndex:indexPath.item];
+            }
+        }
+    }else{
+        if (self.delegate && [self.delegate respondsToSelector:@selector(photoView:imageClickIndex:)]) {
+            [self.delegate photoView:self imageClickIndex:indexPath.item];
         }
     }
-   
 }
 - (void)deleteModelWithIndex:(NSInteger)index {
     if (index < 0) {
@@ -268,6 +276,8 @@ static NSString *HXPhotoSubViewCellId = @"photoSubViewCellId";
     _showAddCell = showAddCell;
     self.tempShowAddCell = showAddCell;
 }
+
+
 #pragma mark -- lazyLoading
 - (UICollectionViewFlowLayout *)flowLayout {
     if (!_flowLayout) {
@@ -279,9 +289,7 @@ static NSString *HXPhotoSubViewCellId = @"photoSubViewCellId";
 - (KPPhotoSubViewCell *)addCell {
     if (!_addCell) {
         _addCell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"addCell" forIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];
-        _addCell.backgroundColor =[UIColor redColor];
         _addCell.model = self.addModel;
-      
     }
     return _addCell;
 }
@@ -299,7 +307,7 @@ static NSString *HXPhotoSubViewCellId = @"photoSubViewCellId";
         //        if (self.manager.UIManager.photoViewAddImageName) {
         //            _addModel.thumbPhoto = [HXPhotoTools hx_imageNamed:self.manager.UIManager.photoViewAddImageName];
         //        }else {
-        _addModel.image = [UIImage imageNamed:@"compose_pic_add"];
+        _addModel.image = [UIImage imageNamed:@"sendTopic_addImage"];
         _addModel.type = KPPhotoModelType_addImage;
         //        }
     }

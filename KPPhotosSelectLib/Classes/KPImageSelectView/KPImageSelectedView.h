@@ -7,13 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class KPImageSelectedView ,KPPhotoModel;
+#import "KPPhotoModel.h"
+@class KPImageSelectedView ;
 @protocol KPPhotoViewDelegate <NSObject>
 @optional
 
+-  (void)addBtnClick;
+
+
+//点击的第几个图片
+- (void)photoView:(KPImageSelectedView *)photoView imageClickIndex:(NSInteger)index;
+
+
 // 代理返回 选择、移动顺序、删除之后的图片结果
-- (void)photoView:(KPImageSelectedView *)photoView imageChangeComplete:(NSArray<UIImage *> *)imageList;
+- (void)photoView:(KPImageSelectedView *)photoView imageChangeComplete:(NSArray *)imageList;
 
 // 当view更新高度时调用
 - (void)photoView:(KPImageSelectedView *)photoView updateFrame:(CGRect)frame;
@@ -31,6 +38,8 @@
 @interface KPImageSelectedView : UIView
 
 @property (weak, nonatomic) id<KPPhotoViewDelegate> delegate;
+@property (strong, nonatomic) NSMutableArray *dataList;
+
 
 @property (nonatomic,strong) NSMutableArray *imageArray;
 

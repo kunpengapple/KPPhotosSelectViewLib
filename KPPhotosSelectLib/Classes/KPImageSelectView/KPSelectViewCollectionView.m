@@ -82,7 +82,10 @@
 {
     self.originalIndexPath = [self indexPathForItemAtPoint:[longPgr locationOfTouch:0 inView:longPgr.view]];
     KPPhotoSubViewCell *cell = (KPPhotoSubViewCell *)[self cellForItemAtIndexPath:self.originalIndexPath];
-  
+    if (cell.model.type == KPPhotoModelType_addImage) {
+        self.isAddBtn = YES;
+        return;
+    }
     UIView *tempMoveCell = [cell snapshotViewAfterScreenUpdates:NO];
     self.dragCell = cell;
     cell.hidden = YES;

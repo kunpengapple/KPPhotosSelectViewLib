@@ -16,4 +16,5 @@ typedef NS_ENUM (NSInteger, KPPhotoModelType)   {
 @interface KPPhotoModel : NSObject
 @property (nonatomic ,strong)UIImage *image;
 @property (nonatomic ,assign)KPPhotoModelType type;
+@property(nonatomic, assign) CGRect photosFrame;
 @end
