@@ -74,11 +74,14 @@ static NSString *HXPhotoSubViewCellId = @"photoSubViewCellId";
     }else{
         self.tempShowAddCell = YES;
     }
-    [self.collectionView reloadData];
     [self setupNewFrame];
+    [self.collectionView reloadData];
+
 }
 /**  添加图片 */
 - (void)addImagesWithArray:(NSArray *)imageArray {
+    [self.dataList removeAllObjects];
+
     for (UIImage *image in imageArray) {
         KPPhotoModel *imageModel = [[KPPhotoModel alloc] init];
         imageModel.image = image;
@@ -90,29 +93,34 @@ static NSString *HXPhotoSubViewCellId = @"photoSubViewCellId";
     }else{
         self.tempShowAddCell = YES;
     }
-    [self.collectionView reloadData];
     [self setupNewFrame];
+
+    [self.collectionView reloadData];
 }
 
 - (NSArray *)dataSourceArrayOfCollectionView:(KPSelectViewCollectionView *)collectionView {
     return self.dataList;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+
     if (self.tempShowAddCell) {
         if (indexPath.item == self.dataList.count) {
-            return self.addCell;
+            KPPhotoSubViewCell *cell =[self addCellWithIndexPath:indexPath];
+            return cell;
         }
     }
     KPPhotoSubViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HXPhotoSubViewCellId forIndexPath:indexPath];
     cell.delegate = self;
     cell.model = self.dataList[indexPath.item];
     cell.model.photosFrame = cell.frame;
-    cell.backgroundColor = [UIColor blueColor];
-
+    
+  
     return cell;
+
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-   return self.tempShowAddCell ? self.dataList.count + 1 : self.dataList.count;
+   NSInteger cellcount = self.tempShowAddCell ? self.dataList.count + 1 : self.dataList.count;
+    return cellcount;
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (self.tempShowAddCell) {
@@ -145,13 +153,21 @@ static NSString *HXPhotoSubViewCellId = @"photoSubViewCellId";
     }else {
 //        NSSLog(@"删除失败 - cell为空");
     }
+    
 }
 - (void)dragCellCollectionView:(KPSelectViewCollectionView *)collectionView newDataArrayAfterMove:(NSArray *)newDataArray {
     self.dataList = [NSMutableArray arrayWithArray:newDataArray];
 }
+
 - (void)dragCellCollectionViewCellEndMoving:(KPSelectViewCollectionView *)collectionView {
     if ([self.delegate respondsToSelector:@selector(photoView:imageChangeComplete:)]) {
         [self.delegate photoView:self imageChangeComplete:self.dataList.mutableCopy];
+    }
+}
+
+- (void)dragCellCollectionView:(KPSelectViewCollectionView *)collectionView moveCellFromIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+    if ([self.delegate respondsToSelector:@selector(dragCellCollectionView:moveCellFromIndexPath:toIndexPath:)]) {
+        [self.delegate dragCellCollectionView:self moveCellFromIndexPath:fromIndexPath.item toIndexPath:toIndexPath.item];
     }
 }
 /**
@@ -178,11 +194,14 @@ static NSString *HXPhotoSubViewCellId = @"photoSubViewCellId";
     [self.dataList removeObjectAtIndex:indexPath.item];
     [self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
 //    [self changeSelectedListModelIndex];
-    if (self.showAddCell) {
+//    if (self.showAddCell) {
         if (!self.tempShowAddCell) {
             self.tempShowAddCell = YES;
             [self.collectionView reloadData];
         }
+//    }
+    for (KPPhotoSubViewCell *cell in self.collectionView.visibleCells) {
+           cell.model.photosFrame = cell.frame;
     }
     
     if ([self.delegate respondsToSelector:@selector(photoView:currentDeleteModel:currentIndex:)]) {
@@ -286,11 +305,11 @@ static NSString *HXPhotoSubViewCellId = @"photoSubViewCellId";
     return _flowLayout;
 }
 
-- (KPPhotoSubViewCell *)addCell {
-    if (!_addCell) {
-        _addCell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"addCell" forIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];
+- (KPPhotoSubViewCell *)addCellWithIndexPath:(NSIndexPath *)indexPath {
+//    if (!_addCell) {
+        _addCell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"addCell" forIndexPath:indexPath];
         _addCell.model = self.addModel;
-    }
+//    }
     return _addCell;
 }
 - (NSMutableArray *)dataList {

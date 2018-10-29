@@ -14,7 +14,7 @@
 
 -  (void)addBtnClick;
 
-
+- (void)dragCellCollectionView:(KPImageSelectedView *)collectionView moveCellFromIndexPath:(NSInteger )fromIndexPath toIndexPath:(NSInteger )toIndexPath;
 //点击的第几个图片
 - (void)photoView:(KPImageSelectedView *)photoView imageClickIndex:(NSInteger)index;
 
